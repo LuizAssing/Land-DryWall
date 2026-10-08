@@ -46,21 +46,24 @@ perguntas.forEach(function (pergunta) {
 
 const campoTelefone = document.querySelector('#telefone');
 
-campoTelefone.addEventListener('input', function () {
-  let numeros = campoTelefone.value.replace(/\D/g, '').slice(0, 11);
+// A página de materiais não tem formulário, então só ativa se o campo existir
+if (campoTelefone) {
+  campoTelefone.addEventListener('input', function () {
+    let numeros = campoTelefone.value.replace(/\D/g, '').slice(0, 11);
 
-  if (numeros.length > 10) {
-    numeros = numeros.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
-  } else if (numeros.length > 6) {
-    numeros = numeros.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
-  } else if (numeros.length > 2) {
-    numeros = numeros.replace(/^(\d{2})(\d{0,5})$/, '($1) $2');
-  } else if (numeros.length > 0) {
-    numeros = numeros.replace(/^(\d{0,2})$/, '($1');
-  }
+    if (numeros.length > 10) {
+      numeros = numeros.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+    } else if (numeros.length > 6) {
+      numeros = numeros.replace(/^(\d{2})(\d{4})(\d{0,4})$/, '($1) $2-$3');
+    } else if (numeros.length > 2) {
+      numeros = numeros.replace(/^(\d{2})(\d{0,5})$/, '($1) $2');
+    } else if (numeros.length > 0) {
+      numeros = numeros.replace(/^(\d{0,2})$/, '($1');
+    }
 
-  campoTelefone.value = numeros;
-});
+    campoTelefone.value = numeros;
+  });
+}
 
 const formulario = document.querySelector('#form-orcamento');
 const mensagemSucesso = document.querySelector('#mensagem-sucesso');
@@ -138,21 +141,23 @@ function montarMensagem() {
   return linhas.join('\n');
 }
 
-formulario.addEventListener('submit', function (evento) {
-  evento.preventDefault();
+if (formulario) {
+  formulario.addEventListener('submit', function (evento) {
+    evento.preventDefault();
 
-  mensagemSucesso.hidden = true;
+    mensagemSucesso.hidden = true;
 
-  if (validarFormulario()) {
-    const link = 'https://wa.me/' + numeroWhatsApp + '?text=' + encodeURIComponent(montarMensagem());
-    window.open(link, '_blank');
+    if (validarFormulario()) {
+      const link = 'https://wa.me/' + numeroWhatsApp + '?text=' + encodeURIComponent(montarMensagem());
+      window.open(link, '_blank');
 
-    mensagemSucesso.hidden = false;
-    formulario.reset();
-  } else {
-    const primeiroErro = formulario.querySelector('[aria-invalid="true"]');
-    if (primeiroErro) {
-      primeiroErro.focus();
+      mensagemSucesso.hidden = false;
+      formulario.reset();
+    } else {
+      const primeiroErro = formulario.querySelector('[aria-invalid="true"]');
+      if (primeiroErro) {
+        primeiroErro.focus();
+      }
     }
-  }
-});
+  });
+}

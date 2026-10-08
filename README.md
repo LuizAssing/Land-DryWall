@@ -8,7 +8,8 @@ Feita apenas com **HTML, CSS e JavaScript puros** (sem frameworks ou bibliotecas
 
 - Header fixo com menu hambúrguer no celular
 - Scroll suave nos links do menu
-- Seções: serviços, diferenciais, como funciona, depoimentos, FAQ e formulário de orçamento
+- Seções: serviços, materiais, diferenciais, como funciona, depoimentos, FAQ e formulário de orçamento
+- Página de materiais com perfis, placas, acabamento e isolamento, com atalhos por categoria
 - FAQ em accordion
 - Formulário com validação, máscara de telefone e envio pelo WhatsApp (abre a conversa com os dados já preenchidos, sem backend)
 - Botão flutuante de WhatsApp
@@ -17,12 +18,22 @@ Feita apenas com **HTML, CSS e JavaScript puros** (sem frameworks ou bibliotecas
 ## Estrutura
 
 ```
-/index.html        -> estrutura da página
+/index.html        -> página principal
+/materiais.html    -> página de materiais
 /css/style.css     -> estilos
 /js/script.js      -> interações
-/assets/img/       -> imagens
+/imagens/          -> fotos dos materiais
 /README.md
 ```
+
+## Créditos das imagens
+
+Fotos do [Wikimedia Commons](https://commons.wikimedia.org), com licença livre:
+
+- `perfis.jpg`: U.S. Navy, domínio público
+- `placas.jpg`: Timothyjosephwood, CC BY-SA 4.0
+- `isolamento.jpg`: FMI Fachverband Mineralwolleindustrie, CC BY-SA 3.0 DE
+- `acabamento.jpg`: Minnesota National Guard, domínio público
 
 ## Integrantes
 

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materiais usados pela Wd decorações: perfis metálicos, placas de drywall, isolamento, fitas e massas.">
+  <title>Materiais | Wd decorações</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__conteudo">
+      <a href="index.html" class="logo">Wd <span>decorações</span></a>
+
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="menu-botao__linha"></span>
+        <span class="menu-botao__linha"></span>
+        <span class="menu-botao__linha"></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <ul class="menu__lista">
+          <li><a href="index.html#servicos" class="menu__link">Serviços</a></li>
+          <li><a href="materiais.html" class="menu__link menu__link--atual" aria-current="page">Materiais</a></li>
+          <li><a href="index.html#diferenciais" class="menu__link">Diferenciais</a></li>
+          <li><a href="index.html#como-funciona" class="menu__link">Como funciona</a></li>
+          <li><a href="index.html#depoimentos" class="menu__link">Depoimentos</a></li>
+          <li><a href="index.html#faq" class="menu__link">FAQ</a></li>
+          <li><a href="index.html#orcamento" class="menu__link menu__link--destaque">Orçamento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--pagina">
+      <div class="container hero__conteudo">
+        <h1 class="hero__titulo">Materiais que utilizamos</h1>
+        <p class="hero__subtitulo">
+          Um bom acabamento começa na escolha do material. Veja o que entra em cada etapa da sua obra.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <nav class="atalhos" aria-label="Etapas da obra">
+          <a href="#perfis"><span>1</span> Estrutura</a>
+          <a href="#placas"><span>2</span> Fechamento</a>
+          <a href="#isolamento"><span>3</span> Isolamento</a>
+          <a href="#acabamento"><span>4</span> Acabamento</a>
+        </nav>
+
+        <article class="bloco" id="perfis">
+          <img src="imagens/perfis.jpg" alt="Profissional fixando um perfil metálico no piso" class="bloco__imagem" width="1200" height="800" loading="lazy">
+          <div class="bloco__conteudo">
+            <span class="bloco__etapa">Etapa 1 · Estrutura</span>
+            <h2 class="bloco__titulo">Perfis metálicos</h2>
+            <p class="bloco__descricao">O "esqueleto" da parede ou do forro. Usamos aço galvanizado, que não enferruja nem empena.</p>
+
+            <dl class="itens">
+              <div class="itens__item">
+                <dt>Guias</dt>
+                <dd>Fixadas no piso e no teto, definem onde a parede vai ficar.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Montantes</dt>
+                <dd>Perfis verticais encaixados nas guias. Usamos 48, 70 ou 90 mm, conforme a espessura da parede.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Cantoneiras e tabicas</dt>
+                <dd>Protegem os cantos e fazem o arremate entre parede e forro.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="bloco bloco--invertido" id="placas">
+          <div class="placas-visual" aria-hidden="true">
+            <div class="placa placa--branca"><span>ST</span></div>
+            <div class="placa placa--verde"><span>RU</span></div>
+            <div class="placa placa--rosa"><span>RF</span></div>
+          </div>
+          <div class="bloco__conteudo">
+            <span class="bloco__etapa">Etapa 2 · Fechamento</span>
+            <h2 class="bloco__titulo">Placas de drywall</h2>
+            <p class="bloco__descricao">As placas são parafusadas na estrutura. Cada ambiente pede um tipo, e a cor identifica a função.</p>
+
+            <dl class="itens">
+              <div class="itens__item">
+                <dt>Standard (ST) <span class="etiqueta">branca</span></dt>
+                <dd>Para áreas secas, como salas, quartos e escritórios.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Resistente à umidade (RU) <span class="etiqueta etiqueta--verde">verde</span></dt>
+                <dd>Absorve menos água. Indicada para banheiros, cozinhas e lavanderias.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Resistente ao fogo (RF) <span class="etiqueta etiqueta--rosa">rosa</span></dt>
+                <dd>Tem fibra de vidro na composição e resiste mais tempo ao fogo. Usada em saídas de emergência e áreas técnicas.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="bloco" id="isolamento">
+          <img src="imagens/isolamento.jpg" alt="Rolos e painéis de lã de vidro e lã de rocha" class="bloco__imagem" width="1200" height="675" loading="lazy">
+          <div class="bloco__conteudo">
+            <span class="bloco__etapa">Etapa 3 · Isolamento</span>
+            <h2 class="bloco__titulo">Lãs de isolamento</h2>
+            <p class="bloco__descricao">Colocadas dentro da parede ou acima do forro, deixam o ambiente mais silencioso e confortável.</p>
+
+            <dl class="itens">
+              <div class="itens__item">
+                <dt>Lã de vidro</dt>
+                <dd>Leve e eficiente no isolamento acústico e térmico. É a opção mais usada em paredes e forros.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Lã de rocha</dt>
+                <dd>Mais densa e incombustível. Recomendada quando o isolamento também precisa proteger contra fogo.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Lã PET</dt>
+                <dd>Feita de garrafas PET recicladas. Não pinica no manuseio e é uma opção sustentável.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="bloco bloco--invertido" id="acabamento">
+          <img src="imagens/acabamento.jpg" alt="Profissional aplicando massa no forro de drywall" class="bloco__imagem" width="1200" height="857" loading="lazy">
+          <div class="bloco__conteudo">
+            <span class="bloco__etapa">Etapa 4 · Acabamento</span>
+            <h2 class="bloco__titulo">Fitas, massas e fixadores</h2>
+            <p class="bloco__descricao">É aqui que a parede fica lisa e pronta para pintar, sem emendas aparentes.</p>
+
+            <dl class="itens">
+              <div class="itens__item">
+                <dt>Fitas para juntas</dt>
+                <dd>Fita de papel ou telada aplicada nas emendas entre placas para evitar trincas.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Massas</dt>
+                <dd>Cobrem fitas e parafusos e deixam a superfície uniforme.</dd>
+              </div>
+              <div class="itens__item">
+                <dt>Parafusos e buchas</dt>
+                <dd>Parafusos próprios para drywall e buchas especiais para pendurar TVs, prateleiras e armários.</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <div class="chamada">
+          <h2 class="chamada__titulo">Não sabe qual material é ideal para sua obra?</h2>
+          <p>Na visita técnica a gente indica a melhor solução, sem custo.</p>
+          <a href="index.html#orcamento" class="botao">Solicitar orçamento</a>
+        </div>
+
+        <p class="creditos">
+          Fotos: Wikimedia Commons —
+          <a href="https://commons.wikimedia.org/wiki/File:Metal_Framing_(9020041).jpg" target="_blank" rel="noopener">U.S. Navy</a> (domínio público),
+          <a href="https://commons.wikimedia.org/wiki/File:Drywall_and_tools.jpg" target="_blank" rel="noopener">Timothyjosephwood</a> (CC BY-SA 4.0),
+          <a href="https://commons.wikimedia.org/wiki/File:Arrangement_Mineralwolle.jpeg" target="_blank" rel="noopener">FMI Fachverband Mineralwolleindustrie</a> (CC BY-SA 3.0 DE),
+          <a href="https://commons.wikimedia.org/wiki/File:180726-Z-IL540-1128_(30058183198).jpg" target="_blank" rel="noopener">Minnesota National Guard</a> (domínio público).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <div>
+        <p class="logo">Wd <span>decorações</span></p>
+        <p>Drywall em Foz do Iguaçu e região.</p>
+      </div>
+
+      <address class="rodape__contato">
+        <h2 class="rodape__titulo">Contato</h2>
+        <p>Telefone: <a href="tel:+5545999830663">(45) 99983-0663</a></p>
+        <p>E-mail: <a href="mailto:contato@wddecoracoes.com.br">contato@wddecoracoes.com.br</a></p>
+        <p>Foz do Iguaçu - PR</p>
+      </address>
+
+      <div>
+        <h2 class="rodape__titulo">Redes sociais</h2>
+        <ul class="rodape__redes">
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="rodape__direitos">
+      &copy; 2026 Wd decorações. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <a href="https://wa.me/5545999830663?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20drywall."
+     class="whatsapp" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.4L3 29l7-1.8c1.8 1 3.9 1.5 6 1.5 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.2 9.9 10 5.2 16 5.2s10.8 4.7 10.8 10.6S22 26.4 16 26.4zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/>
+    </svg>
+  </a>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
